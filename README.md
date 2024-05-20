@@ -36,11 +36,11 @@ A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, an
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/web-warriors-todo-list.git
+    git clone https://github.com/Za-Kreative/WebWarriors.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd web-warriors-todo-list
+    cd WebWarriors
     ```
 3. Set up your local server using XAMPP or any other PHP server and ensure MySQL is running.
 
@@ -66,7 +66,7 @@ A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, an
     ?>
     ```
 
-6. Open your browser and navigate to `http://localhost/web-warriors-todo-list`.
+6. Open your browser and navigate to `http://localhost/index.php`.
 
 ## Usage
 
@@ -79,7 +79,7 @@ A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, an
 
 ## File Structure
 
-web-warriors-todo-list/
+WebWarriors/
 ├── css/
 │ └── style.css
 ├── php/
@@ -125,10 +125,7 @@ Contributions are welcome! Please follow these steps:
     ```
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
-Enjoy coding! 🚀
+Enjoy Going through this website ! 🚀
+Project was done by © WebWarriors
