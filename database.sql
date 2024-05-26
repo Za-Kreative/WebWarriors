@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS users (
 CREATE TABLE IF NOT EXISTS tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
     description VARCHAR(255) NOT NULL,
     status ENUM('pending', 'completed') NOT NULL DEFAULT 'pending',
     removed BOOLEAN NOT NULL DEFAULT FALSE,
