@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgb(4, 0, 251) 0%,
+        rgb(10, 190, 255) 90%
+    );
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 20px hsla(0, 0%, 100%, 0.1);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    color: #333;
+}
+
+.navbar-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-buttons a {
+    background-color: #4796ff;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    width: 400px;
+    background-color: #ffffff;
+    padding: 10px 30px;
+}
+
+.card_title {
+    text-align: center;
+    padding: 10px;
+}
+
+.card_title h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.form input {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #e2e2e2;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.form button {
+    background-color: #4796ff;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 15px;
+    width: 100%;
+}
+
+.card_terms {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.card_terms input[type="checkbox"] {
+    background-color: #e2e2e2;
+}
+
+.card_terms span {
+    margin: 5px;
+    font-size: 13px;
+}
+
+.card a {
+    color: #4796ff;
+    text-decoration: none;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+    background-color: #e9ecef;
+}
+
+#task-list li a {
+    margin-left: 10px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#task-list li a:hover {
+    color: #0056b3;
+}
+
+#task-list li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#task-list li button.remove {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+#task-list li button.recover {
+    background-color: #4caf50;
+    color: white;
+}
