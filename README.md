@@ -1,5 +1,8 @@
 # WebWarriors
 # Web Warriors To-Do List
+# By Zakarya Oukil, Chakib Walid Malek, Sirine Saidani
+
+
 
 ![Web Warriors](https://img.shields.io/badge/WebWarriors-ToDoList-blueviolet)
 
@@ -9,7 +12,6 @@ A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, an
 
 - [Features](#features)
 - [Screenshots](#screenshots)
-- [Installation](#installation)
 - [Usage](#usage)
 - [File Structure](#file-structure)
 - [Technologies Used](#technologies-used)
@@ -26,56 +28,16 @@ A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, an
 
 ## Screenshots
 
-![Sign Up](path/to/signup_screenshot.png)
-![Sign In](path/to/signin_screenshot.png)
-![To-Do List](path/to/todolist_screenshot.png)
-![Completed Tasks](path/to/completed_tasks_screenshot.png)
-![Removed Tasks](path/to/removed_tasks_screenshot.png)
+![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/302366a4-679f-4119-a9d6-fa0020a13ed8)
 
-## Installation
+![Sign In]![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/65f1e397-dbdc-4058-9f68-8aae724942f5)
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Za-Kreative/WebWarriors.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd WebWarriors
-    ```
-3. Set up your local server using XAMPP or any other PHP server and ensure MySQL is running.
+![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/e5485362-0f74-4dff-8dd4-6010de9eec0f)
 
-4. Import the `database.sql` file to set up the database:
-    - Open phpMyAdmin.
-    - Create a new database named `todo_list`.
-    - Import the `database.sql` file located in the root of the project.
+![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/d3fdc1b0-7fb2-4967-97a9-da3bfa34c93d)
 
-5. Update the database configuration in `php/db.php`:
-    ```php
-    <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "todo_list";
-    $port = 3306; // Ensure this matches the configured port
+![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/0699e4b4-59b9-43b5-8088-cc439bed9294)
 
-    $conn = new mysqli($servername, $username, $password, $dbname, $port);
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    ?>
-    ```
-
-6. Open your browser and navigate to `http://localhost/index.php`.
-
-## Usage
-
-1. Sign Up for a new account or Sign In with existing credentials.
-2. Add new tasks using the input field and the "Add Task" button.
-3. Mark tasks as completed or remove them from the list.
-4. View completed tasks by clicking the "Completed" button in the navbar.
-5. Manage removed tasks by clicking the "Removed" button in the navbar. You can recover or permanently delete tasks.
-6. Sign out using the "Sign Out" button in the navbar.
 
 ## File Structure
 
@@ -89,6 +51,7 @@ WebWarriors/
 │ ├── delete_task.php
 │ ├── recover_task.php
 │ ├── remove_task.php
+│ ├── edit_task.php
 │ ├── sign_in.php
 │ ├── sign_out.php
 │ └── sign_up.php
@@ -96,6 +59,7 @@ WebWarriors/
 ├── sign_in.php
 ├── sign_up.php
 ├── completed_tasks.php
+├── edit_task.php
 ├── removed_tasks.php
 └── database.sql
 
