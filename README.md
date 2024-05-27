@@ -5,6 +5,8 @@
 
 
 ![Web Warriors](https://img.shields.io/badge/WebWarriors-ToDoList-blueviolet)
+![welcome-michael-scott](https://github.com/Za-Kreative/WebWarriors/assets/126286464/60cf2787-4156-440a-aaf3-ac669ee53ca0)
+
 
 A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, and MySQL. This application allows users to create, view, complete, and delete tasks, as well as manage removed tasks and view completed tasks. It also includes user authentication features.
 
