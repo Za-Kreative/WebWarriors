@@ -15,7 +15,6 @@ A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, an
 
 - [Features](#features)
 - [Screenshots](#screenshots)
-- [Usage](#usage)
 - [File Structure](#file-structure)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
