@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0040ff, #00bfff); /* Blue gradient background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #4796ff;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+}
+
+.navbar-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.navbar-buttons a {
+    background-color: #4796ff;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-container {
+    width: 80%;
+    max-width: 1200px; /* Increased max width for larger viewports */
+    margin: 80px auto; /* Adjusted margins to account for fixed navbar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card_title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.task-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-label {
+    align-self: flex-start;
+    margin-top: 12px;
+}
+
+/* Add styles for form inputs and labels */
+.form label {
+    font-size: 16px;
+    color: #333;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    background-color: #f1f1f1;
+    border: 2px solid #ddd;
+    outline: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #333;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #4796ff;
+    box-shadow: 0 0 8px rgba(71, 150, 255, 0.5);
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #999;
+    font-size: 16px;
+}
+
+.form button {
+    background-color: #0040ff;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #002db3;
+    box-shadow: 0 4px 8px rgba(0, 45, 179, 0.2);
+}
+
+/* Flexbox container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+/* Flexbox items */
+.flex-item {
+    flex: 1 1 calc(33.333% - 40px); /* 3 items per row with spacing */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0; /* Adjusted top and bottom margins */
+}
+
+#task-list .task-content {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#task-list h2,
+#task-list p {
+    margin: 10px 0;
+    font-weight: normal;
+    color: #555;
+    line-height: 1.4;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.task-button {
+    background-color: #0040ff;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-button:hover {
+    background-color: #002db3;
+    box-shadow: 0 4px 8px rgba(0, 45, 179, 0.2);
+}
+
+.card_terms {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.card_terms input[type="checkbox"] {
+    background-color: #e2e2e2;
+}
+
+.card_terms span {
+    margin: 5px;
+    font-size: 13px;
+}
+
+.card a {
+    color: #4796ff;
+    text-decoration: none;
+}
+
+#task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+#task-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 40px);
+    margin: 20px 0; /* Adjusted top and bottom margins */
+}
+
+#task-list li h2,
+#task-list li p {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.no-tasks-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+/* Centered container styles for edit page */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    padding-top: 60px; /* Ensure it doesn't get hidden behind the navbar */
+}
+
+.edit-card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    width: 400px;
+    background-color: #ffffff;
+    padding: 20px 30px;
+}
+/* Flexbox container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+/* Flexbox items */
+.flex-item {
+    flex: 1 1 calc(33.333% - 40px); /* 3 items per row with spacing */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0; /* Adjusted top and bottom margins */
+}
+
+#task-list .task-content {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#task-list h2,
+#task-list p {
+    margin: 10px 0;
+    font-weight: normal;
+    color: #555;
+    line-height: 1.4;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.task-button {
+    background-color: #0040ff;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-button:hover {
+    background-color: #002db3;
+    box-shadow: 0 4px 8px rgba(0, 45, 179, 0.2);
+}
+
+/* Centering 'No tasks yet!' message */
+.no-tasks-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
