@@ -28,15 +28,15 @@ A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, an
 
 ## Screenshots
 
-## Sign Up
+- Sign Up
 ![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/302366a4-679f-4119-a9d6-fa0020a13ed8)
-## Sign In
+- Sign In
 ![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/65f1e397-dbdc-4058-9f68-8aae724942f5)
-## Home Page
+- Home Page
 ![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/e5485362-0f74-4dff-8dd4-6010de9eec0f)
-## Completed Tasks
+- Completed Tasks
 ![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/d3fdc1b0-7fb2-4967-97a9-da3bfa34c93d)
-## Removed Tasks
+- Removed Tasks
 ![image](https://github.com/Za-Kreative/WebWarriors/assets/126286464/0699e4b4-59b9-43b5-8088-cc439bed9294)
 
 
