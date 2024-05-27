@@ -44,25 +44,45 @@ A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, an
 
 WebWarriors/
 ├── css/
+
 │ └── style.css
+
 ├── php/
+
 │ ├── add_task.php
+
 │ ├── complete_task.php
+
 │ ├── db.php
+
 │ ├── delete_task.php
+
 │ ├── recover_task.php
+
 │ ├── remove_task.php
+
 │ ├── edit_task.php
+
 │ ├── sign_in.php
+
 │ ├── sign_out.php
+
 │ └── sign_up.php
+
 ├── index.php
+
 ├── sign_in.php
+
 ├── sign_up.php
+
 ├── completed_tasks.php
+
 ├── edit_task.php
+
 ├── removed_tasks.php
+
 └── database.sql
+
 
 ## Technologies Used
 
