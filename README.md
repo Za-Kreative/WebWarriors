@@ -46,6 +46,7 @@ A simple, user-friendly To-Do List web application built with HTML, CSS, PHP, an
 ## File Structure
 
 WebWarriors/
+
 ├── css/
 
 │ └── style.css
