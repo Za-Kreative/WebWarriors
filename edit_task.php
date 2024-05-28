@@ -1,6 +1,4 @@
 <?php
-// Your PHP logic to fetch the task details
-
 session_start();
 if (!isset($_SESSION['user_id'])) {
     header('Location: sign_in.php');
@@ -10,14 +8,13 @@ if (!isset($_SESSION['user_id'])) {
 include 'php/db.php';
 $user_id = $_SESSION['user_id'];
 
-// Fetch task details based on the task ID
 $task_id = $_GET['id'];
 $sql = "SELECT * FROM tasks WHERE id = $task_id AND user_id = $user_id";
 $result = $conn->query($sql);
 $task = $result->fetch_assoc();
 
 if (!$task) {
-    // Handle task not found
+    
     header('Location: index.php');
     exit();
 }
